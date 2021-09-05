@@ -1,16 +1,25 @@
-### Hi there 👋
+| <center>软件工程</center> | <[网工1234-软件工程](https://edu.cnblogs.com/campus/gdgy/networkengineering1934-Softwareengineering)> |
+| :----------------------------------------------------------- | ------------------------------------------------------------ |
+| 作业要求:<br>　　1.使用 Markdown 排版进行随笔的编写，并在博客中附加后台博文编辑界面的截图。<br>　　2.自我介绍，比如自己的兴趣爱好，自己的学习或者生活经历，自己认为有趣或者值得向别人展示的记忆，不限字数，图文并茂更好。<br>　　3.快速阅读教材，提出 5 个想弄懂的问题。<br>　　4.通过这门课程想收获什么。 | <center><[作业要求](https://edu.cnblogs.com/campus/gdgy/networkengineering1934-Softwareengineering/homework/12136)></center> |
+| 作业目标:<br>　　注册博客园账号和 GitHub 账号，初步学习使用 Mardown 进行随笔编写，以及 GitHub 的基本操作，简单了解软件工程内容后思考并提出问题 | 我理解的作业目标:<br>　　为软工的学习打下基础，提出疑问    |
+<br>
+<h2>自我介绍 + 软工 5 问</h2><hr>
+<br>
 
-<!--
-**czh5/czh5** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 自我介绍
 
-Here are some ideas to get you started:
+　　我是来自网络工程 4 班的陈志恒,对游泳比较感兴趣，享受在水中自由自在的感觉。在过去两年的学习中，感觉自己对专业知识的掌握程度不高，希望在新一年的学习中能更好的提升自己。在日常的学习中，除了课本和课堂上的学习，我还通过一些学习网站学习专业知识以及解答疑惑，我通常会在 [bilibili](https://www.bilibili.com/) 这个网站中观看学习视频，通过[百度](https://www.baidu.com/)和 [CSDN](https://www.csdn.net/) 来解开疑惑，学习的内容不仅有计算机组成原理，计算机网络，操作系统等专业知识，还有 JAVA 等变成语言，我觉得结合学习 + 解惑的方式能让我更好的掌握知识。相较于参加工作室或者参加过项目的同学以及对专业知识掌握程度较高的同学，我仍有许多需要提高的地方。
+<br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 5 个想搞懂的问题
+
+　　1、学习软件工程这门课对我们的软件开发有什么帮助？
+　　2、为什么软件开发中测试工作占全部工作量的 40% ~ 50%？
+　　3、理论学习和实际开发的差距有多大？
+　　4、进行软件设计时需要考虑哪些因素？
+　　5、如何实现软件的长期维护？
+<br>
+
+## 想收获到什么
+
+　　通过软件工程这一门课的学习，我希望我能提高软件开发的能力，同时与以前所学知识结合，融会贯通，提高我对专业知识的掌握程度。同时我还希望对软件工程这一门课的学习能够让我了解到软件开发的思路和流程。
