@@ -48,20 +48,18 @@ public class SimilarityAnalysis {
             double molecule = 0;
             double denominator1 = 0;
             double denominator2 = 0;
-            Set<Word> origSet = origMap.keySet();   //得到分词
-            Set<Word> compSet = compMap.keySet();
 
 
-            for (Word word : origSet) {
-                if (compSet.contains(word)) {
+            for (Word word : origMap.keySet()) {
+                if (compMap.containsKey(word)) {
                     // 分子，即x1y1+x2y2+...+xn*yn
                     molecule += origMap.get(word)*compMap.get(word);
                 }
                 // 分母构成
                 denominator1 += Math.pow(origMap.get(word),2); //x1²+x2²+x3²+...+xn²
             }
-            for (Word word : compSet) {
-                denominator2 += Math.pow(compMap.get(word),2);  //y1²+y2²+y3²+...+yn²
+            for (Integer appearNum : compMap.values()) {
+                denominator2 += Math.pow(appearNum,2);  //y1²+y2²+y3²+...+yn²
             }
 
             //分母，即sqrt(x1²+x2²+x3²+...+xn²)*sqrt(y1²+y2²+y3²+...+yn²)
