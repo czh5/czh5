@@ -12,10 +12,14 @@ public class Application {
 
         long start = System.currentTimeMillis();    //开始时间
 
-        double similarity = SimilarityAnalysis.cosSimilarity(
-                WordCut.getSplitWord(DocumentOperation.readDocument(origPath)),
-                WordCut.getSplitWord(DocumentOperation.readDocument(compPath))
-        );
+        String orig = DocumentOperation.readDocument(origPath);
+        String comp = DocumentOperation.readDocument(compPath);
+
+        if (orig.isEmpty() && comp.isEmpty()) {
+            throw new RuntimeException("错误，文件为空！");
+        }
+
+        double similarity = SimilarityAnalysis.cosSimilarity(WordCut.getSplitWord(orig), WordCut.getSplitWord(comp));
         DocumentOperation.writeDocument(origPath,compPath,resultPath,similarity);
 
         System.out.println("耗时：" + (System.currentTimeMillis() - start) + " ms");
