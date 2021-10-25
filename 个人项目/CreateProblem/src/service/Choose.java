@@ -90,7 +90,7 @@ public class Choose {
         FileWriter writer = new FileWriter(gPath);
         if (correct.toString().endsWith("(")) {
             //表示此时全错
-            correct.append(")");
+            correct.append(")\n");
         } else if (wrong.toString().endsWith("(")) {
             //表示此时全对
             wrong.append(")");
