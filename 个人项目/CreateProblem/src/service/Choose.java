@@ -103,5 +103,7 @@ public class Choose {
         writer.flush();
         writer.write("Wrong：" + (answer.size() - rightNum) + wrong);
         writer.close();
+
+        System.out.println("批改完毕，批改结果可在[grade.txt]中查看");
     }
 }
