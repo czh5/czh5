@@ -76,21 +76,32 @@ public class Choose {
         for (int i = 0; i < rightAnswers.size(); i++) {
             if (answer.get(i).endsWith("= ")) {
                 //表示没填，直接判错误
-                wrong.append(i+1).append(",");
+                wrong.append(i + 1).append(",");
             } else if (answer.get(i).split("= ")[1].equals(rightAnswers.get(i).split("、")[1])) {
                 //答案相同则正确
-                correct.append(i+1).append(",");
+                correct.append(i + 1).append(",");
                 rightNum++;
             } else {
                 //错误
-                wrong.append(i+1).append(",");
+                wrong.append(i + 1).append(",");
             }
         }
 
         FileWriter writer = new FileWriter(gPath);
-        writer.write("Correct：" + rightNum + correct.substring(0,correct.length()-1) + ")\n");
+        if (correct.toString().endsWith("(")) {
+            //表示此时全错
+            correct.append(")");
+        } else if (wrong.toString().endsWith("(")) {
+            //表示此时全对
+            wrong.append(")");
+        } else {
+            //表示有对有错
+            correct = new StringBuilder(correct.substring(0, correct.length() - 1) + ")\n");
+            wrong = new StringBuilder(wrong.substring(0, wrong.length() - 1) + ")");
+        }
+        writer.write("Correct：" + rightNum + correct);
         writer.flush();
-        writer.write("Wrong：" + (answer.size() - rightNum) + wrong.substring(0,wrong.length()-1) + ")");
+        writer.write("Wrong：" + (answer.size() - rightNum) + wrong);
         writer.close();
     }
 }
