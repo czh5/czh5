@@ -91,9 +91,11 @@ public class Choose {
         if (correct.toString().endsWith("(")) {
             //表示此时全错
             correct.append(")\n");
+            wrong = new StringBuilder(wrong.substring(0, wrong.length() - 1) + ")");
         } else if (wrong.toString().endsWith("(")) {
             //表示此时全对
             wrong.append(")");
+            correct = new StringBuilder(correct.substring(0, correct.length() - 1) + ")\n");
         } else {
             //表示有对有错
             correct = new StringBuilder(correct.substring(0, correct.length() - 1) + ")\n");
